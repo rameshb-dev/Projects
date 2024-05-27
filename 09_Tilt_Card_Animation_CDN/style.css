@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titlecard:nth-child(1) {
+    width: 400px;
+    height: 550px;
+    background: rgb(255, 0, 0);
+    margin: 0 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(177, 174, 174);
+}
+.titlecard:nth-child(2) {
+    width: 400px;
+    height: 550px;
+    background: rgb(0, 255, 26);
+    margin: 0 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+}

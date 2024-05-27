@@ -1,0 +1,79 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.App {
+    width: 1000px;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+label {
+    color: #333;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.generate-pwd {
+    margin: 10px auto 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-pwd:hover {
+    background-color: #0056b3;
+}
+
+.generated-pwd button {
+    margin-left: 20px;
+    padding: 8px 20px;
+    background-color: #18c56c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generated-pwd button:hover {
+    background-color: #129a53;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+p {
+    font-size: 32px;
+    color: green;
+    margin-top: 10px;
+}

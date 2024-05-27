@@ -1,0 +1,86 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(./images/navbar-bg-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+nav {
+  background-color: black;
+  width: 100%;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+nav a:hover {
+  color: yellow;
+}
+
+.menu-line {
+  height: 4px;
+  width: 30px;
+  margin-bottom: 4px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+.menu {
+  cursor: pointer;
+  display: none;
+}
+
+@media all and (max-width: 640px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav li {
+    display: block;
+    padding: 10px 0;
+  }
+
+  ul {
+    text-align: center;
+    padding: 0px;
+    display: none;
+  }
+
+  .logo {
+    align-self: flex-start;
+    margin: 10px 0px 0px 30px;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+  }
+
+  .showmenu {
+    display: block;
+    /* position: absolute;
+    top: 25px;
+    right: 20px; */
+  }
+}

@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, blue, magenta, red 55%, green);
+}
+.usercard {
+    position: relative;
+    width: 300px;
+    padding: 35px 15px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.imgbox {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border: 8px solid;
+    border-radius: 50%;
+    margin: 10px auto;
+    overflow: hidden;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.info {
+    /* position: relative; */
+}
+.title {
+    text-align: center;
+}
+.title h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.rating label {
+    /* font-size: 16px; */
+    font-weight: 400;
+    color: #dadada;
+    border-right: 2px solid white;
+    padding-right: 10px;
+}
+.rating span {
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.rating i {
+    font-size: 10px;
+    color: #ffba0d;
+}
+
+.rating i.white {
+    color: white;
+}
+.icons {
+    /* position: relative; */
+    text-align: center;
+    margin: 15px 0;
+}
+.icons i {
+    padding: 0 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.icons i:hover {
+    font-size: 20px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button {
+    background: none;
+    border: 1.5px solid #fff;
+    width: 120px;
+    padding: 3px 0;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.bgfill {
+    background: white;
+    color: black;
+}
+
+.container {
+    position: fixed;
+}
+
+.container::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 100;
+    top: -60px;
+    left: 40px;
+    animation: animate 2s linear infinite;
+}
+
+.container::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: -1;
+    top: 250px;
+    left: 250px;
+    animation: animate2 3s linear infinite;
+}
+
+@keyframes animate {
+    50% {
+        transform: translateY(20px);
+    }
+}
+@keyframes animate2 {
+    50% {
+        transform: translateX(20px);
+    }
+}

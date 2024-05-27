@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <title>Navigation Bar with Dropdown Menu</title>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="logo">
+                <h1>Techies.</h1>
+            </div>
+            <button class="menu-toggle"><i class="fa fa-bars"></i></button>
+            <ul class="nav-main-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link"
+                        ><span>Blog</span
+                        ><i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Software & Apps</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link"
+                        ><span>Service</span
+                        ><i class="fa-solid fa-chevron-down"></i
+                    ></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Web Development</a></li>
+                        <li class="sub-dropdown">
+                            <a href="#" class="dropdown-link"
+                                ><span>Hosting</span
+                                ><i class="fa-solid fa-chevron-right"></i
+                            ></a>
+                            <ul class="sub-dropdown-content">
+                                <li><a href="#">Wordpress Hosting</a></li>
+                                <li><a href="#">Shared Hosting</a></li>
+                                <li><a href="#">App Hosting</a></li>
+                                <li><a href="#">VPS Hosting</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Software Development</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="btn">
+                <span>Sign In</span>
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+        </nav>
+        <main>
+            <p>Navigation bar with Dropdown & <br />Sub Dropdown.</p>
+        </main>
+    </body>
+</html>

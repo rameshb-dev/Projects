@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    background-color: brown;
+    color: red;
+}
+
+h3 {
+    font-size: 50px;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px 5px rgba(253, 6, 228), 5px 5px 0px rgb(94, 255, 2, 0.6);
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    grid-row-gap: 32px;
+    margin: 20px auto;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white;
+}
+
+#gameBoard {
+    width: 500px;
+    height: 500px;
+    padding: 30px 10px;
+    margin: 10px auto;
+    border: 2px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 25px rgba(255, 251, 1, 0.5);
+}
+
+#gameBoard div {
+    margin: auto;
+    height: 140px;
+    width: 80px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.cardback {
+    /* Get css background pattern https://10015.io/tools/css-background-pattern-generator */
+
+    background-image: repeating-conic-gradient(#ffffff 0% 25%, #ff0000 0% 50%);
+    background-position: 0 0, 32px 32px;
+    background-size: 20px 20px;
+    background-color: #ff0000;
+}
+
+#gameBoard div:hover {
+    cursor: pointer;
+}
+
+.won {
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    text-shadow: 3px 3px 5px white, 5px 5px 0px black;
+}

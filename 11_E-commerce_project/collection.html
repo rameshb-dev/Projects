@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Awesome CSS for the project -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <!-- External CSS for the project  -->
+        <link rel="stylesheet" href="style.css" />
+        <title>Udai Collection</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar">
+            <h1><a href="index.html">Udai</a></h1>
+            <div class="navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link">
+                    <a href="collection.html">Collections</a>
+                </p>
+                <p class="navbar-link"><a href="contacts.html">Contacts</a></p>
+            </div>
+            <div class="navbar-menu-toggle">
+                <i onclick="shownavbar()" class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <!-- side-navbar -->
+        <div class="side-navbar">
+            <p style="text-align: right">
+                <i onclick="closenavbar()" class="fa-solid fa-xmark"></i>
+            </p>
+            <div class="side-navbar-links">
+                <p class="side-navbar-link"><a href="index.html">Home</a></p>
+                <p class="side-navbar-link">
+                    <a href="collection.html">Collections</a>
+                </p>
+                <p class="side-navbar-link">
+                    <a href="contacts.html">Contacts</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Products -->
+        <div class="product-section">
+            <form action="" class="product-search">
+                <input type="text" id="search" placeholder="Search Product" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+            <div class="products" id="products">
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?White Shirt?1"
+                        alt="Random Shirt image"
+                    />
+                    <p>White Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Black Shirt?1"
+                        alt="Random Shirt image"
+                    />
+                    <p>Black Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Red Shirt?1"
+                        alt="Random Shirt image"
+                    />
+                    <p>Red Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Blue Shirt?1"
+                        alt="Random Shirt image"
+                    />
+                    <p>Blue Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Yellow Shirt?1"
+                        alt="Random Shirt image"
+                    />
+                    <p>Yellow Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Green Shirt?1"
+                        alt="Random Shirt image"
+                    />
+                    <p>Green Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Brown Shirt?1"
+                        alt="Random Shirt image"
+                    />
+                    <p>Brown Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Magenta Shirt?1"
+                        alt="Random Shirt image"
+                    />
+                    <p>Magenta Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?White Shirt?2"
+                        alt="Random Shirt image"
+                    />
+                    <p>White Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Black Shirt?2"
+                        alt="Random Shirt image"
+                    />
+                    <p>Black Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Red Shirt?2"
+                        alt="Random Shirt image"
+                    />
+                    <p>Red Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Blue Shirt?2"
+                        alt="Random Shirt image"
+                    />
+                    <p>Blue Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Yellow Shirt?2"
+                        alt="Random Shirt image"
+                    />
+                    <p>Yellow Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Green Shirt?2"
+                        alt="Random Shirt image"
+                    />
+                    <p>Green Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Brown Shirt?2"
+                        alt="Random Shirt image"
+                    />
+                    <p>Brown Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Magenta Shirt?2"
+                        alt="Random Shirt image"
+                    />
+                    <p>Magenta Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?White Shirt?3"
+                        alt="Random Shirt image"
+                    />
+                    <p>White Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Black Shirt?3"
+                        alt="Random Shirt image"
+                    />
+                    <p>Black Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Red Shirt?3"
+                        alt="Random Shirt image"
+                    />
+                    <p>Red Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Blue Shirt?3"
+                        alt="Random Shirt image"
+                    />
+                    <p>Blue Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Yellow Shirt?3"
+                        alt="Random Shirt image"
+                    />
+                    <p>Yellow Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Green Shirt?3"
+                        alt="Random Shirt image"
+                    />
+                    <p>Green Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Brown Shirt?3"
+                        alt="Random Shirt image"
+                    />
+                    <p>Brown Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Magenta Shirt?3"
+                        alt="Random Shirt image"
+                    />
+                    <p>Magenta Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?White Shirt?4"
+                        alt="Random Shirt image"
+                    />
+                    <p>White Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Black Shirt?4"
+                        alt="Random Shirt image"
+                    />
+                    <p>Black Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Red Shirt?4"
+                        alt="Random Shirt image"
+                    />
+                    <p>Red Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Blue Shirt?4"
+                        alt="Random Shirt image"
+                    />
+                    <p>Blue Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Yellow Shirt?4"
+                        alt="Random Shirt image"
+                    />
+                    <p>Yellow Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Green Shirt?4"
+                        alt="Random Shirt image"
+                    />
+                    <p>Green Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Brown Shirt?4"
+                        alt="Random Shirt image"
+                    />
+                    <p>Brown Shirt</p>
+                </div>
+                <div class="product-box">
+                    <img
+                        src="https://source.unsplash.com/random/250x250/?Magenta Shirt?4"
+                        alt="Random Shirt image"
+                    />
+                    <p>Magenta Shirt</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="news">
+            <h2>Join our News Letter</h2>
+            <p>
+                Signup for our email newsletter to get exclusive discounts and
+                updates and more
+            </p>
+            <div>
+                <input type="text" class="search" />
+            </div>
+            <div>
+                <button>Subscribe</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-box-1">
+                    <h2 class="headingText">Udai</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Voluptas sed eveniet placeat eos tenetur aliquam
+                        unde id numquam. Iusto, possimus.
+                    </p>
+                    <div class="footer-icon-container">
+                        <i
+                            class="fa-brands fa-instagram"
+                            style="color: white"
+                        ></i>
+                        <i
+                            class="fa-brands fa-twitter"
+                            style="color: white"
+                        ></i>
+                        <i
+                            class="fa-brands fa-facebook"
+                            style="color: white"
+                        ></i>
+                        <i
+                            class="fa-brands fa-whatsapp"
+                            style="color: white"
+                        ></i>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; padding: 10px; margin-top: 15px">
+                &copy; 2024, Udai Enterprise Pvt. Ltd. All Rights Reserved.
+            </p>
+        </footer>
+        <script src="app.js"></script>
+        <script src="collection.js"></script>
+    </body>
+</html>

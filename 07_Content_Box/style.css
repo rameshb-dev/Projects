@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+}
+
+.container {
+    /* position: relative; */
+    width: 1200px;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.container .box {
+    position: relative;
+    float: left;
+    width: calc(400px - 30px);
+    height: calc(300px - 30px);
+    background-color: lightgrey;
+    margin: 15px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    border-radius: 10px;
+}
+
+.container .box .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    transition: 0.5s;
+    border-radius: 10px;
+    /* z-index: 1; */
+}
+
+.container .box:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.container .box .icon .fa-brands {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: white;
+}
+
+.container .box:hover .icon .fa-brands {
+    font-size: 40px;
+}
+
+.container .box .content {
+    position: absolute;
+    top: 100%;
+    height: calc(100% -100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.container .box:hover .content {
+    opacity: 1;
+    top: 100px;
+}
+
+.container .box .content h3 {
+    margin: 0 0 10px;
+    padding: 0;
+    color: black;
+    font-size: 24px;
+}
+
+.container .box .content p {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.container .box:nth-child(1) .icon {
+    background: #e34d26;
+}
+.container .box:nth-child(1) {
+    background: white;
+}
+
+.container .box:nth-child(2) .icon {
+    background: rgba(0, 149, 255, 0.901);
+}
+.container .box:nth-child(2) {
+    background: white;
+}
+
+.container .box:nth-child(3) .icon {
+    background: rgb(212, 212, 29);
+}
+.container .box:nth-child(3) {
+    background: white;
+}
+
+.container .box:nth-child(4) .icon {
+    background: rgb(8, 126, 164);
+}
+.container .box:nth-child(4) {
+    background: white;
+}
+
+.container .box:nth-child(5) .icon {
+    background: #4c0bce;
+}
+.container .box:nth-child(5) {
+    background: white;
+}
+
+.container .box:nth-child(6) .icon {
+    background: rgb(80, 71, 71);
+}
+.container .box:nth-child(6) {
+    background: white;
+}

@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+.navbar {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    z-index: 100;
+}
+
+.navbar-links {
+    display: flex;
+    column-gap: 20px;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #1e232f;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1e232f;
+}
+
+.navbar-link:hover a {
+    text-decoration: underline;
+    color: #1e232f;
+}
+
+.navbar-menu-toggle {
+    display: none;
+}
+
+.side-navbar {
+    box-sizing: border-box;
+    background-color: #1e232f;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -50%;
+    padding: 20px;
+    color: white;
+    transition: 1s;
+}
+
+.side-navbar-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.side-navbar-link {
+    margin-bottom: 30px;
+}
+
+.side-navbar-link:hover a {
+    text-decoration: underline;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px;
+    margin: 20px;
+}
+.header img {
+    padding: 10px;
+}
+.header-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.service {
+    padding: 20px;
+}
+
+.service-container-1 {
+    background: linear-gradient(45deg, #4fa7ef 0%, #dd2bd9 100%);
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.service-container-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-container-2 div {
+    background-color: #f2f4f7;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.new-arrival {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.new-arrival-container {
+    position: relative;
+    display: flex;
+    width: 200px;
+    /* flex-basis: 20%; */
+    justify-content: space-around;
+}
+
+.overlay {
+    position: absolute;
+    width: 200px;
+    height: 40%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.new-arrival button {
+    padding: 4% 8%;
+    margin-top: 10px;
+    color: black;
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.news {
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news input {
+    padding: 15px;
+    width: 80vw;
+    margin: 10px auto;
+    border: 3px solid black;
+}
+
+.news button {
+    padding: 10px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.footer {
+    padding: 40px;
+    background-color: #1d232c;
+    color: white;
+}
+
+.product-section {
+    margin-top: 20px;
+}
+.product-search {
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: auto;
+}
+.product-search input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+.product-search input:focus {
+    outline: none;
+}
+.products {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product-box {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.product-box img {
+    border-radius: 10px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    background-color: #1e232f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 30px;
+    margin: 40px auto 0 auto;
+    border-radius: 10px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input,
+.input-group textarea {
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px white;
+}
+
+#form button {
+    background-color: rgb(90, 101, 154);
+    border: 1px solid rgb(90, 101, 154);
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    width: 40%;
+}
+
+#form button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+.msg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 200;
+    display: none;
+}
+
+.confirm-msg {
+    width: 500px;
+    height: 180px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 50px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    color: white;
+    top: 20%;
+    left: 32%;
+    right: 0;
+    bottom: 0;
+    z-index: 201;
+    display: none;
+}
+.confirm-msg button {
+    margin-top: 20px;
+    padding: 20px 20px;
+    border: none;
+    background-color: #1e232f;
+    border-radius: 10px;
+    color: white;
+    width: 30%;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-menu-toggle {
+        display: block;
+    }
+    .navbar-links {
+        display: none;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .service {
+        padding: 20px;
+    }
+    .service-container-1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .service-container-2 {
+        flex-direction: column;
+    }
+    .new-arrival-container {
+        position: relative;
+        display: flex;
+        flex-basis: 40%;
+        justify-content: space-around;
+    }
+    .img-div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #form {
+        width: 60%;
+    }
+    .navbar {
+        position: static;
+    }
+    .confirm-msg {
+        width: 400px;
+        height: 150px;
+        font-size: 20px;
+        line-height: 35px;
+        padding: 30px 30px;
+        top: 20%;
+        left: 17%;
+    }
+}
