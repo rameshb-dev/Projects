@@ -132,6 +132,12 @@ body {
     justify-content: space-around;
 }
 
+.new-arrival-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
 .overlay {
     position: absolute;
     width: 200px;
@@ -222,8 +228,16 @@ body {
 
 .product-box img {
     border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
+.img-div img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
 .form-container {
     display: flex;
     justify-content: center;
@@ -353,6 +367,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
     #form {
         width: 60%;
     }
