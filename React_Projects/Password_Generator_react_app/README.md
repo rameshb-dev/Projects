@@ -23,13 +23,13 @@ Just one click to generate Random Password. The page will Generate the random pa
 
 ### `Random Password Generator Website`<br><br>
 
-![GIF Output](/password-generator/public/screen-shots/password-generator.gif)
+![GIF Output](/public/screen-shots/password-generator.gif)
 <br><br>
 **💡SS** of `Home Page`<br><br>
-![Screen Shot](/password-generator/public/screen-shots/password-generator-home-page.png)<br><br>
+![Screen Shot](/public/screen-shots/password-generator-home-page.png)<br><br>
 **💡SS** of `Password Generator - Generated`<br><br>
-![Screen Shot](/password-generator/public/screen-shots/password-generator-generated-password.png)<br><br>
+![Screen Shot](/public/screen-shots/password-generator-generated-password.png)<br><br>
 **💡SS** of `Copied Message Display`<br><br>
-![Screen Shot](/password-generator/public/screen-shots/copied-generated-pwd-message.png)<br><br>
+![Screen Shot](/public/screen-shots/copied-generated-pwd-message.png)<br><br>
 
 > # Thank You
