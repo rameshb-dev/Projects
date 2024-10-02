@@ -18,14 +18,14 @@ function App() {
         if (useLowerCase) charset += "abcdefghijklmnopqrstuvwxyz";
         if (useUpperCase) charset += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        console.log(charset);
+        // console.log(charset);
 
         for (let i = 0; i < passwordLength; i++) {
             newPassword += charset.charAt(
                 Math.floor(Math.random() * charset.length)
             );
-            setPassword(newPassword);
         }
+        setPassword(newPassword);
     };
 
     // // Method:1 to copy to Clipboard
